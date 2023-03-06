@@ -1,0 +1,143 @@
+# Activités de recherche et de développement
+
+## Orientation générale
+
+### Contexte {-}
+
+Depuis 2012, début de ma thèse à IFREMER, mes travaux de recherche se sont focalisés sur deux domaines majeurs de la modélisation statistique, les modèles à variables latentes, et les processus définis par une équation différentielle stochastique. 
+Ma démarche scientifique consiste à partir de données et d'une question biologique, et formaliser un modèle statistique dont l'expression fait le lien entre les données observées et des inconnues. 
+L'estimation de ces inconnues est alors censée apporter une réponse à la question biologique initiale. 
+Ainsi, la capacité à faire de l'estimation dans le modèle posé est cruciale dans cette démarche statistique. 
+Ceci implique alors de i) proposer un estimateur (une méthode de détermination des inconnues à partir des données), ii) fournir un code d'implémentation, iii) évaluer ses performances pratiques, iv) fournir des garanties théoriques notamment ses propriétés asymptotiques.
+
+Mes travaux de recherche depuis mon recrutement ont perduré dans cette voie, avec un accent mis sur les méthodes d'inférence pour les modèles de Markov caché, notamment dans le cadre de modèles à temps continus imparfaitement observés.
+
+
+### Inférence dans des modèles de Markov caché généraux: définition d'un nouvel estimateur avec garanties théoriques {-}
+
+- [@gloaguen2022pseudo] *A pseudo-marginal sequential Monte Carlo online smoothing algorithm*;
+- [@martin2023backward] *Backward importance sampling for online estimation of state space models*;
+
+ Depuis leur introduction dans les années 60, les HMMs ont fait l'objet d'une grande quantité d'études,  cette popularité s'expliquant par leur nombre important d'applications dans des domaines aussi variés que la localisation, la  poursuite d'objets en environnement complexe, la restauration de signaux, et comme nous le verrons dans la section suivante, la détection de régimes d'activités.
+Formellement est une suite  d'observations $Y_{0:T} := Y_0,\dots, Y_T$ (typiquement, les vitesses des individus) ordonnées dans le temps dont les distributions sont définies conditionnellement à la valeur d'un processus de Markov $X_{0:T}= X_0,\dots,X_T$. Ce processus **non observé** est caractérisé par sa loi initiale $\chi_0$ et sa loi de transition $q(\cdot,\cdot)$. 
+Dans un cadre paramétrique, les lois d'émissions (loi de $Y_t \vert X_t$) et de transition (loi de $X_{t + 1} \vert X_t$) dépendent d'une inconnue $\theta \in \Theta$, où $\Theta$ est l'espace des paramètres. 
+On a ainsi le modèle suivant
+\begin{align*}
+X_0 &\sim \chi_0^\theta({\text{d}x_0}) & \text{ Loi initiale du processus caché}\\
+X_t\vert \left\lbrace X_{t - 1} = x_{t - 1}\right\rbrace &\sim q_t^\theta(x_{t - 1},  \text{d}x_t),~t\geq 1 &\text{ Loi de transition du processus caché}\\
+Y_t \vert \left\lbrace X_t = x_t \right\rbrace &\sim g_t^\theta(x_{t}, \text{d} y_t),~ t\geq 0 &\text{ Loi d'émission des observations}
+\end{align*}
+
+Ce formalisme est adapté pour faire de la segmentation de séries temporelles. 
+En halieutique, par exemple, les navires de pêche sont suivis par GPS, fournissant une séquence $Y_{0:n}$ de vitesses. À partir de ces vitesses, les halieutes souhaitent quantifier l'effort de pêche du navire, *i.e*, le temps passé à pêcher au cours de son déplacement. 
+Une vision probabiliste du problème consiste à dire que les observations sont des variables aléatoires dont la loi dépend de l'activité du navire (pêche ou non pêche, par exemple), qui est non observée. 
+Cette activité cachée a une dynamique temporelle (l'activité de pêche dure dans le temps), qu'on modélisera par une chaîne de Markov avec un nombre fini d'états.
+Dans un tel modèle, où l'espace d'état est discret et les lois d'émissions sont paramétrés, l'inférence par maximum de vraisemblance se fait de manière bien connue en utilisant un algorithme itératif, l'algorithme *Expectation Maximization* (EM).
+
+Un cas plus compliqué est celui où le processus caché est à valeurs dans $\mathbb{R}^{d_X}$, avec une dynamique potentiellement non gaussienne et non linéaire. 
+Par exemple si on suppose que ce processus est la réalisation d'un processus de diffusion, c'est à dire que:
+$$\text{d}X_t = f(X_t, t; \theta)\text{d}t + \sigma(X_t,t;\theta)\text{d}W_t,$$
+où $\left\lbrace W_t\right\rbrace_{t \geq 0}$ est un mouvement Brownien standard, $f(\cdot, \cdot)$ est la *fonction de dérive* et $\sigma(\cdot, \cdot)$ est la *fonction de diffusion*.
+La solution d'une EDS, quand elle existe, est un processus stochastique Markovien en temps continu.
+Cette description en temps continu est attractive en écologue, notamment car elle permet de s'affranchir de problèmes d'échantillonnage. 
+Cependant, faire de l'inférence dans un tel modèle est nettement plus compliqué que dans le cadre discret, car l'étape E de l'algorithme EM n'est plus explicite.
+
+Au cours d'une trilogie d'articles, qui avait commencé en 2018 avec [@gloaguen2018online] et qui vient de s'achever, nous avons pu proposer, avec mes coauteurs et coautrices: 
+
+1. Un nouvel algorithme pour faire de l'inférence statistique dans un tel modèle;
+2. Des garanties théoriques sur ce nouvel algorithme;
+3. Une illustration pratique des performances de cet algorithme.
+
+Cette séquence de travaux s'est faite en collaboration avec Sylvain Le Corff (Télécom Sud-Paris puis Sorbonne Université), Jimmy Olsson (Institut KTH de Stockholm), Marie-Pierre Etienne (Agrocampus-Ouest) et une doctorante, Alice Martin (Ecole polytechnique).
+
+### Problèmatiques appliquées {-}
+
+- [@michelot2019langevin] *The Langevin diffusion as a continuous-time model of animal movement and habitat selection*;
+- [@gloaguen2021scalable] *Scalable clustering of segmented trajectories within a continuous time framework: application to maritime traffic data*;
+- [@chagneux2023macrolitter] *Macrolitter video counting on riverbanks using state space models and moving cameras*;
+
+Les modèles à temps continus et les HMMs sont attractifs dans les applications où l'échantillonnage est irrégulier et bruité, et où les données présentent une structure de dépendance complexe.
+
+Ainsi, les travaux théoriques discutés plus hauts se sont accompagnés d'applications concrètes. Par exemple, avec Théo Michelot, un doctorant en écologie de l'université de Sheffield, nous avons joint la théorie des algorithmes de Monte Carlo par chaîne de Markov (MCMC) avec des approches d'équations différentielles stochastiques guidées par un potentiel pour définir un modèle novateur décrivant le déplacement d'un animal dans un environnement hétérogène. 
+Ce modèle est fourni avec une méthode d'estimation efficace, aux propriétés théoriques connues, et avec une performance pratique testée. Ceci a donné lieu a une publication dans une revue de méthodes pour l'écologie et l'évolution.
+
+
+D'un point de vue opérationnel, dans un contexte de données massives, le cadre des HMMs pour les trajectoires a aussi été utilisé pour faire du clustering de gros volumes de données, et ainsi de la détection d'anomalies, dans le cadre de la gestion du trafic maritime.
+Dans ce travail, l'objectif était de déterminer une typologie des trajectoires observées dans des zones de trafic maritime intense, comme le rail d'Ouessant. 
+Ce travail a donné lieu a une publication dans un numéro spécial d'une revue d'apprentissage statistique, numéro consacré aux traitements de données satellitaires.
+
+Depuis deux ans, je coencadre une thèse dans le cadre du projet  [Plastic Origins](https://surfrider.eu/nos-missions/dechets-aquatiques/plastic-origins-70172.html#:~:text=Plastic%20Origins%20est%20un%20projet,d%C3%A8s%20l'int%C3%A9rieur%20des%20terres.), organisé par l'association Surfrider, dont le but est d'établir une cartographie des déchets plastiques dans les rivières françaises. 
+Le premier objectif de la thèse est de définir, à partir vidéos filmées par des kayakistes le long des rivières, un algorithme de comptage du nombre de déchets dans des vidéos. 
+Il s'agit d'une tâche semi-supervisée car les vidéos elles-mêmes ne sont pas annotées. Nous disposons simplement d'un ensemble d'images indépendantes de ces vidéos, où la présence d'objets est annotée. 
+Le cadre choisi pour cet algorithme consiste à 
+
+1. Utiliser des modèles classiques de deep learning pour entraîner un détecteur efficace d'objets plastiques. Ce détecteur sera appliqué séquentiellement sur toutes les images de la vidéo.
+2. Considérer les sorties de ces détecteurs comme les observations imparfaites d'un état caché à dynamique Markovienne: l'ensemble des positions des vrais objets.
+
+Cette approche, mêlant deep learning et HMMs, a donné lieu a un premier algorithme de comptage efficace qui sera bientôt mis en production par l'association Surfrider. 
+De plus, cela a donné lieu à une publication récente dans la nouvelle revue de la Société Française de Statistiques: Computo, revue de statistique gratuite pour les auteurs, et les lecteurs, consacrée à une science véritablement reproductible.
+
+### Animation de recherche {-}
+
+Depuis mon recrutement, je me suis investi dans différentes actions d'animation de recherche. 
+À l'échelle locale, je suis actuellement coresponsable avec Joon Kwon, membre de mon UMR, de l'organisation du [séminaire  de Statistiques]() de mon unité. 
+
+Je coanime également, avec Julien Stoehr (Université Paris Sciences et lettres) et Sylvain Le Corff (Sorbonne Université), un réseau académique parisien sur la statistique bayésienne ([All about that Bayes](https://sites.google.com/view/all-about-that-bayes/)), qui se réunit mensuellement à Agroparistech. 
+Depuis plus récemment, je coanime avec Guillaume Kon Kam King (INRAe Jouy en Josas) et Nicolas Chopin (ENSAE) un groupe de lecture autour des méthodes de Monte Carlo sur le plateau. Ce groupe de lecture rassemble différents chercheurs du plateau. Cet animation a vocation à créer des collaborations dans notre nouvel environnement de travail qu'est le plateau de Saclay.
+
+À l'échelle nationale, je coanime avec Julien Papaix  et Emily Walker (tous deux INRAe Avignon) le réseau INRAe [CisStats](https://cisstats.mathnum.inrae.fr/accueil) (statistics for citizen sciences), qui réunit des chercheurs et des associatifs autour des sciences participatives.
+
+Je me suis également investi  dans l'organisation de conférences. J'ai organisé avec Sophie Donnet et Eric Parent, d'Agroparistech, la conférence "Statistiques au sommet de Rochebrune" en Mars 2022, et j'ai organisé avec Julien Stoehr et Sylvain Le Corff la conférence internationale [Bayes at CIRM](https://bayesatcirm.github.io/) en Octobre 2021, sur le thème de l'inférence bayésienne *end to end*, i.e. de la théorie aux applications récentes en deep learning.
+
+Depuis 2014, je participe activement au [groupe de recherche Ecologie Statistique](https://sites.google.com/site/gdrecostat/), regroupant chercheurs en statistiques et en écologie, à l'interface des deux disciplines. Je suis également investi dans le groupe [State of the R](https://stateofther.netlify.app/), animé par des chercheurs de l'équipe SOLSTIS, regroupant des chercheurs et ingénieurs autour des dernières avancées de `R` et `Python` pour les statistiques. 
+De plus, je suis membre de la Société Française de Statistiques, dans laquelle je fais partie du tout nouveau groupe de statistiques bayésiennes.
+
+Enfin, avec Julien Chiquet et Nicolas Jouvin (Agroparistech) et Alline de Reis (Ecole vétérinaire de Maison-Alfort), nous avons en place un *data challenge* sur la plateforme RAMP développée par l'INRIA. 
+L'objectif du *data-challenge* est de faire de la classification de vidéos d'embryons bovins. 
+Cette démarche en partenariat avec une généticienne est l'occasion de lier recherche et enseignement, car le défi est avant tout adresser aux étudiants.    
+
+## Cadre structurel de la recherche et du développement
+
+Ma recherche s'effectue dans l'unité mixte de recherche (UMR) Agroparistech/INRAe "Mathématiques et informatique appliquées" (MIA-Paris-Saclay). 
+Cette UMR recoupe, peu ou prou, le département de recherche  Agroparistech Mathématiques, Modélisation, informatique et physique (MMIP). 
+Au sein de cette UMR, je fais partie de l'équipe *Statistical mOdelling and Learning for environnemenT and lIfe Sciences* (SOLSTIS).
+
+## Objectifs - Thème(s) (genèse, état actuel, perspective) - Insertion dans les programmes locaux, régionaux, nationaux, européens et internationaux
+
+Ma recherche est à l'interface entre méthodologie, théories et applications. Elle s'est insérée à merveille dans le cadre de l'équipe SOLSTIS et d'Agroparistech. 
+Un bon exemple de travail (en cours) illustrant cette démarche est une collaboration avec Giacomo Sellan de l'UMR ECOFOG (Agroparistech Kourou). 
+Dans le cadre de mes enseignements, j'ai été amené à intervenir dans le Master d'écologie Tropicale d'Agroparistech Kourou. Lors d'un séjour sur place, j'ai rencontré Giacomo Sellan, un botaniste, qui m'a évoqué ses problématiques autour de données recensant la composition spécifique de la forêt de Bornéo. 
+
+Les questionnements donnent lieu en ce moment même à une collaboration avec Eric Parent et Achille Thin, deux enseignants chercheurs de SOLSTIS. Cette collaboration s'est traduite par l'encadrement d'un stage d'étudiant de deuxième année Agroparistech (Léo Houairi) et par l'encadrement de projets du master Université Paris-Saclay Mathématiques pour les sciences du vivant. 
+
+Au travers du réseau de recherche CISStats, et de la collaboration avec l'association Surfrider, ma recherche s'inscrit également dans une dynamique de sciences citoyennes, afin de réunir ensemble acteurs du monde associatifs et chercheurs en apprentissage statistique.
+
+D'un autre point de vue, comme beaucoup de collègues de ma discipline, mon tropisme a été orienté vers l'apprentissage profond dans les modèles statistiques. 
+Par exemple, la thèse de Mathis Chagneux allie les modèles statistiques connus que sont les HMMs aux modèles d'apprentissage modernes, tels que les réseaux de neurones.
+Cette alliance des deux est intéressante et laisse augurer une belle progression des résultats théoriques expliquant les performances pratiques des modèles profonds.
+
+L'exemple de l'apprentissage en ligne dans les vidéos est pour cela très parlant, où l'on a besoin d'un côté d'une modélisation adaptée pour des données structurées (ici, des séquences d'images), mais aussi de modèles parcimonieux qui évitent un trop gros coût de calcul, et donc permettent un déploiement opérationnel.
+
+Dans la suite, je développe mes réflexions sur mes perspectives de recherche.
+
+## Encadrement de la recherche dans le cadre de l'activité de recherche personnelle
+
+- *Novembre 2022 - ...* Coencadrement du post doctorat de Saint-Clair Chabbert-Liddel sur l'identification de réseaux d'interactions de pêcheurs à partir de leurs suivis GPS;
+- *Novembre 2020 - ...* Coencadrement de la thèse de Mathis Chagneux sur l'apprentissage en ligne à partir de données structurées, avec un focus applicatif de comptage de déchets plastiques dans des vidéos;
+- *Mars - Juin 2022* Encadrement du stage de Odin Ruumianowski (2A Agroparistech) sur l'identification des facteurs de sénescence chez le cerf.
+- *Mars - Juillet 2021* Encadrement du stage de Léo Houairi (2A Agroparistech) sur la modélisation jointe de distribution d'espèces dans la forêt de Bornéo;
+- *Février - Aout 2020* Encadrement du stage de M2 de Gaspard Baudrin sur l'application du modèle de Langevin en temps continu pour identifier les facteurs environnementaux guidant le déplacement des navires de pêche.
+
+
+## Développement rural, agro-industriel
+
+## Recherche dans le cadre de la coopération internationale
+
+- Participation au processus d'évalutation pour une demande de financement ANR;
+- Participation au processus de relecture d'articles pour des revues à comité de lecture;
+
+## Publications scientifiques et valorisation
+
+Voir Annexe G;
+
+

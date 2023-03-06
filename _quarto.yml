@@ -1,0 +1,28 @@
+project:
+  type: book
+
+book:
+  title: "Rapport d'activité"
+  subtitle: "Mars 2023"
+  language: fr
+  author: "Pierre Gloaguen, section CNECA n°3"
+  date: ""
+  chapters:
+    - index.qmd
+    - 02_enseignements.qmd
+    - 03_recherche.qmd
+    - 04_autres.qmd
+    - 05_reflexion.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    toc-title: "Table des matières"
+    fontsize: 12pt
+    documentclass: scrreprt
+
+editor: visual
+
