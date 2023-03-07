@@ -1,2 +1,171 @@
 # Réflexion sur les activités et perspectives
 
+## Reflexion sur  ma recherche
+
+### Structure {.unnumbered}
+
+Depuis 4 ans, mon activité de recherche s'est essentiellement structurée autour de laboratoires de statistiques d'Île de France. 
+Avec de nombreuses collaborations et interactions avec d'abord mes collègues de l'équipe SOLsTIS,  les laboratoires INRAe, et les collègues d'autres établissements universitaires (Université Paris-Saclay Sorbonne Université, Institut Polytechnique de Paris, Paris Sciences et Lettres). 
+D'un point de vue personnel, j'apprécie la liberté d'organisation de mon temps de recherche ainsi que de son mode de fonctionnement.
+J'ai la chance d'avoir une recherche peu coûteuse, et une structure (et des collègues) qui me permet d'avoir accès au minimum pour l'exercer, (i.e. billets de trains pour déplacement et ordinateur pour fonctionnement).
+Je ressens une grande liberté de ce point de vue, et j'espère qu'elle perdurera au sein de l'institution.
+En particulier, j'ai la chance que les aspects de ma recherche ne soit pas trop pollués par des aspects qui ne m'intéressent pas, comme la recherche de financement par exemple.
+
+D'un point de vue visibilité de notre unité, un enjeu majeur pour le futur est notre emménagement sur Palaiseau. 
+Il me semble que notre déménagement de Paris peut invisibiliser Agroparistech dans la masse informe qu'est le plateau de Saclay. 
+Je dis ici masse informe, car j'ai l'impression que ce lieu n'a pas encore acquis une identité claire. 
+En tous cas, on n'y ressent pas encore le foisonnement intellectuel qui animait (et anime toujours, mais sans nous), le 5ème arrondissement de Paris.
+
+### Orientations {.unnumbered}
+
+Comme beaucoup de collègues de ma discipline, mon tropisme a été orienté vers l'apprentissage profond dans les modèles statistiques.
+Il me semble que notre unité notamment a opéré un shift dans cette direction, notamment sous l'impulsion de notre directeur d'UMR, Julien Chiquet.
+Ce changement est assez enthousiasmant, nous pouvons le percevoir grâce au séminaire d'unité, que je coorganise depuis deux ans maintenant. 
+Il est aussi visible dans nos relations avec les collègues d'Agroparistech, qui nous identifie comme compétents pour monter avec eux des projets impliquant de l'apprentissage statistique profond.
+Il est intéressant d'apporter ma culture de la statistique plus "traditionnelle", et d'essayer de faire les ponts avec les modèles plus "modernes".
+
+
+Par exemple, la thèse de Mathis Chagneux allie les modèles statistiques connus que sont les HMMs aux modèles d'apprentissage modernes, tels que les réseaux de neurones. Cette alliance des deux est intéressante et laisse augurer une belle progression des résultats théoriques expliquant les performances pratiques des modèles profonds.
+
+L'exemple de l'apprentissage en ligne dans les vidéos est pour cela très parlant, où l'on a besoin d'un côté d'une modélisation adaptée pour des données structurées (ici, des séquences d'images), mais aussi de modèles parcimonieux qui évitent un trop gros coût de calcul, et donc permettent un déploiement opérationnels.
+
+Comme tout effet de mode, les modèles profonds seront à mon avis un peu assimilés comme utiles mais pas miraculeux. 
+Les modèles plus parcimonieux et interprétables (auxquels nous formons encore nos étudiants) auront, à mon avis, un *revival* bien assez tôt, comme a pu l'avoir la modélisation hiérarchique bayésienne en écologie il y a quelques années. 
+
+Notre équipe est à mon avis bien identifiée dans la communauté statistique comme étant à l'interface entre méthodologie et applications pour les sciences du vivant. 
+Cependant, il manque à mon avis une claire formation dans ce domaine pour que les étudiants aimant le vivant et les mathématiques suivent une formation à Agroparistech, et ainsi puissent nous rencontrer (et donc potentiellement alimenter nos laboratoires).
+Aujourd'hui, très peu des étudiants en thèse de notre laboratoire sont issus d'Agroparistech. Ainsi, les étudiants qui s'orientent vers l'intelligence artificielle pour le vivant (c'est clairement une dominante qui fait rêver, à tort ou à raison), ne sont pas en contact direct avec nous (et le seront encore moins depuis que nous sommes sur le plateau). 
+Je pense que ceci devrait être une piste de reflexion pour l'avenir de la formation dans l'école.
+
+## Réflexions sur l'enseignement
+
+J'imagine que ce document n'a pas forcément vocation à réunir les critiques contre le fonctionnement de l'enseignement d'Agroparistech, mais comme on me demande mes réflexions, je les pose, en essayant d'être constructif.
+
+
+### Cadre structurel de l'enseignement
+
+Agroparistech est une école d'ingénieur qui abrite une certaine diversité de profils parmi ses étudiants.
+
+De manière générique l'école à vocation à former des ingénieurs en sciences expérimentales. 
+En tant qu'enseignant en statistiques, notre rôle est de leur transmettre le bagage nécessaire à la mise en place d'expériences, à l'analyse de leurs résultats, à la compréhension des résultats si l'analyse n'est pas réalisée par eux.
+
+Les statistiques sont essentiellement enseignées en tronc commun en première et deuxième année. 
+Une moitié de la promotion (D3 et D4) a le droit à plus de statistiques que les autres.
+
+Ces enseignements communs suivent un format cours magistral TD, étalés au cours des mois d'Octobre à Décembre. 
+L'évaluation, en 2A, est en partie sur projet, en partie sur examen écrit.
+
+Parallèlement à ça, de multiples UC à choix sont proposées.
+Ces UC sont souvent dans un format "module", qui s'étale sur une semaine intensive d'enseignement/TD. 
+En pratique, afin d'avoir à éviter aux étudiants un examen qu'ils n'auraient que peu de temps pour préparer, l'évaluation est faite par projet ou compte rendu de TD.
+
+Mon premier sentiment en tant qu'enseignant est que l'enseignement modulaire est une mauvaise idée pédagogique.
+Les étudiants subissent un enseignement intensif duquel il est difficile de ressortir avec du recul. 
+Il leur est difficile de percevoir la cohérence du cours. Il est compliqué, vu le rythme, de leur donner des exercices à travailler pour le cours suivant.
+De mon point de vue, la compétence technique que nous leur demandons nécessite de la pratique et de la réflexion. 
+Le temps de maturation pour assimiler des notions compliquées est parfois grand. 
+L'enseignement modulaire ne permet pas ça. 
+De plus, l'enseignement modulaire contribue au cloisonnement des disciplines, car un module est isolé dans l'emploi du temps.
+
+Il m'a été argué que ce format était indispensable pour certaines disciplines de terrain, ce que je peux très bien comprendre, et qu'il était du coup pratique que toutes les UC à choix soient selon ce format.
+Ce dernier point est pour moi gênant car la notion de praticité passe avant l'intérêt pédagogique. En effet, je pense que la mise en place de l'emploi du temps devrait être conditionnée au bien fondé pédagogique. Mon sentiment est que ce n'est souvent pas le cas.
+
+De manière générale, mon sentiment est que la crise du COVID et le déménagement sur le site de Palaiseau n'ont fait qu'accentuer l'importance du "format pratique" par rapport à l'intérêt pédagogique.
+
+Par exemple, nous avons demandé à ne pas avoir des amphithéâtres avec plus 300 étudiants lors des cours magistraux de tronc commun. Il était plus pratique d'avoir de faire ainsi\dots 
+
+Je demande de ne pas avoir 4h30 de statistiques lors d'un après midi. Pas pratique dans l'emploi du temps...
+
+Météo-France annoncent potentiellement de la neige? Plus pratique de tout passer en cours à distance.
+
+Une grève des transports est annoncée? 
+Plus pratique de tout passer en cours à distance.
+
+Bref, il m'a souvent semblé lors des trois dernières années que le mauvais critère était utilisé pour aménager les cours (et les salles dans lesquelles nous les faisons).
+
+Il m'a semblé d'ailleurs cette année que ce critère de praticité avait déteint sur les élèves qui nous demandaient régulièrement de basculer nos cours en mode hybride, voire à distance, notamment dès qu'il s'agissait d'un vendredi. 
+
+### Réflexions sur la pédagogie
+
+#### Ma perception du rapport de mes étudiants aux cours de statistique {.unnumbered} 
+
+J'ai suivi une formation en interne à la pédagogie (120h), qui s'est malheureusement déroulée à distance.
+Cette formation m'avait été fortement suggérée, mais je l'ai aussi faite dans un souci de réflexion sur l'approche des cours.
+
+En ce sens, cela m'a apporté, car j'ai pu, en parallèle de mes enseignements, essayer d'améliorer mes cours.
+
+Une des premières choses que j'ai comprise et qu'une approche pédagogique doit convenir à la fois aux étudiants, mais aussi à l'enseignant (d'où mes critiques ci-dessus contre le critère de praticité pour les étudiants, notamment dans le cadre des cours à distance).
+
+Un des aspects intéressants de notre enseignement de statistiques est qu'il est *a priori*, peu attractif pour les étudiants. 
+Ainsi, un travail intéressant est de leur motiver le cours par l'aspect opérationnel de la statistique (et non pas par son intérêt intellectuel en tant que discipline).
+Ainsi, enseigner ma discipline m'a appris énormément sur son usage, ses qualités et ses limites.
+
+Une des limites qu'il convient d'inculquer aux étudiants et que le résultat d'une démarche statistique n'aboutit souvent pas une réponse nette (vrai/faux, oui/non). 
+Cette notion est sans doute surprenante pour eux car ils associent les statistiques aux mathématiques, où la notion de vérité admet très peu d'ambiguïté. 
+Une frustration qui revient souvent chez nous est alors d'avoir des questions récurrentes du type "à partir de combien une corrélation est significative", ou des raisonnements binaires "la probabilité critique est inférieure à 5% donc il y a un effet de...".
+Cet aspect de la réflexion des étudiants m'a beaucoup surpris, car ils ont, pour la plupart, fait beaucoup de biologie. 
+Or, de mon point de vue, les biologistes avec qui je travaille (notamment les écologues), sont habitués à manipuler des notions complexes, et donc ne devraient pas avoir un tropisme vers ce raisonnement en "arbre de décision".
+
+Il me semble que ce réflexe "arbre de décision" a un aspect rassurant pour certains étudiants car il permet d'éviter, justement les raisonnements complexes. 
+
+Cette phrase peut paraître un peu dure, mais mon sentiment est que nos étudiants, malgré leur haut niveau d'étude, n'ont que trop rarement l'envie de réfléchir à un problème (quitte à y passer un peu de temps).
+
+Or, la notion clé des cours de statistiques est la notion de corrélation (linéaire). 
+L'apparition de corrélation dans les données est (surtout en sciences du vivant) par essence complexe. 
+Ainsi, je me rends compte désormais que mon rôle principal est d'essayer leur inculquer l'exigence intellectuelle de ne pas sauter trop vite aux conclusions (tel facteur a un effet sur le COVID, tel aliment rend plus heureux...). 
+
+Cette exigence est en général assez bien perçue par les étudiants, après explications.
+Mon objectif suivant est de leur montrer que cette capacité d'analyse des résultats passe par une compréhension fine de ce que sont des corrélations dans des cadres non triviaux. 
+Et que pour cela, nous devons mathématiser le monde sous forme d'une modèle.
+La difficulté commence ainsi quand on leur demande d'avoir une capacité de formalisation mathématique, et un bagage technique.
+
+Après quatre années d'enseignement ici, je suis très étonné du nombre d'étudiants qui n'ont pas l'air de considérer les compétences techniques (capacité à poser une équation mathématique sans ambiguïté, à résoudre un problème de niveau terminale, à connaître des ordres de grandeurs)[^1] comme importantes pour les ingénieurs.
+
+Ainsi, par réaction sans doute, mais aussi car je pense que c'est une exigence importante, mon enseignement est devenu de plus en plus technique au fil des années. 
+
+[^1]: Mon objectif n'est pas d'énumérer les "perles", mais des étudiants de 3A qui admettent en toute décontraction avoir "toujours été nul" donc ne connaissent pas la fonction exponentielle, qui écrivent sans problème que la probabilité de présence est égale à 1.2, qui disent que faire $2^{10}$ opérations à un ordinateur serait coûteux...
+
+#### Modalités d'évaluation {-}
+
+En arrivant à Agroparistech, un collègue m'avait exposé son point de vue (en fait communément partagé) sur l'évaluation. 
+En substance, dans un groupe d'étudiants, il y en a qui sont d'ores et déjà intéressés par la discipline, et ceux ci seront les "étudiants parfaits", i.e. qui vont remplir mon objectif: ils vont réfléchir et apprendre les notions importantes du cours.
+A coté de ça, une grande (surtout en statistiques!) proportion d'étudiant a pour unique objectif en entamant un cours de valider la matière. Or (et c'est là que mon collègue m'a ouvert les yeux), cet objectif n'est pas incompatible avec le mien.
+Si j'arrive à trouver un mode d'évaluation qui fait que pour valider le cours, il faille réfléchir et connaître les notions importantes, et bien ceux qui valideront le cours auront aussi rempli mon objectif.
+
+La mise en pratique de cette théorie est évidemment difficile, et j'ai essayé souvent plusieurs modes d'évaluation. 
+Les modes d'évaluation choisis l'était, soit par curiosité (essayer quelque chose fait par un collègue), soit par inertie (le collègue précédent a toujours fait ainsi), ou par praticité (notamment pendant la période COVID, ce qui, comme dit plus haut, est une très mauvaise chose).
+
+Comme je l'ai dit plus haut, les trois modes d'évaluation principaux sont l'examen écrit, le compte rendu d'analyse informatique (format DM), ou un projet.
+On nous pousse beaucoup à évaluer par projet (ce qui mettrait en situation d'apprentissage...).
+
+Mon point de vue désormais est que, dans le cadre d'un enseignement massifié (i.e. à des groupes de plus de 30-40), à des étudiants sans claire certitude sur leur objectif post-école (i.e. en 1A ou 2A), les projets et les DM ne sont pas vraiment une bonne idée.
+
+En effet, la nature de l'évaluation fait que les partisans du moindre effort peuvent clairement réussir sans y réfléchir (notamment dans le cadre de travaux en groupe). 
+
+Ainsi, en tant qu'enseignant, on ressent une frustration de lire X fois la même copie et d'attribuer des notes que l'on sait pertinemment ne pas refléter le degré de compréhension.
+
+Je crois un peu plus en la vertu d'un examen écrit, technique, où l'étudiant se retrouve pendant 1h30 seul face à sa copie à devoir réfléchir à un problème.
+Je pense que cette mise en situation de réflexion ne peut être que bénéfique pour les étudiants qui naturellement prendrait un raccourci (pour les motivés, cela ne change pas grand chose). 
+J'ai malheureusement l'impression que certaines "vieilles" modalités d'évaluation sont dépréciées simplement du fait de leur ancienneté.
+
+Concernant les petits groupes, notamment en 3ème année, la maturité des étudiants (qui ont souvent fait une césure auparavant) rend ces projets beaucoup plus intéressant. 
+L'investissement est bien plus important et la soutenance orale devient un échange fructueux pour tout le monde.
+
+#### Conclusions {.unnumbered}
+
+Pour conclure sur mes réflexions pédagogiques, il me semble que la principale chose à essayer de maintenir à Agroparistech est un niveau d'exigence technique des étudiants. 
+Il faut évidemment transmettre aux étudiants qu'ils sont face à des notions techniques potentiellement difficiles, que ce n'est pas grave (voire même, c'est normal) de ne pas les "comprendre" immédiatement, mais qu'ils doivent se donner comme objectif de le faire. 
+Je ne pense pas que cela passe par des innovations pédagogiques (je n'ai que des bons retours sur les cours au tableau), mais
+sans doute par une exigence plus grande au moment de l'évaluation.
+
+Cette exigence doit être accompagnée d'un soutien de la scolarité, et sans doute par un abandon du fatalisme de beaucoup de collègues (moi y compris parfois), du type "de toute façon, on leur donne leur année", "on ne va pas leur faire rater leur année à cause de ce cours", etc...
+
+
+
+
+
+
+
+
+
+

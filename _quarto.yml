@@ -13,6 +13,8 @@ book:
     - 03_recherche.qmd
     - 04_autres.qmd
     - 05_reflexion.qmd
+    - 1A_annexeA.qmd
+    - 1G_annexeG.qmd
 
 bibliography: references.bib
 
@@ -21,8 +23,9 @@ format:
     theme: cosmo
   pdf:
     toc-title: "Table des matières"
+    include-in-header: header.tex
     fontsize: 12pt
     documentclass: scrreprt
 
-editor: visual
+editor: source
 

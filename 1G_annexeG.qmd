@@ -1,0 +1,24 @@
+# Annexe G {.unnumbered}
+
+Dans mes publications, l'ordre des auteurs ne renseigne pas le degré d'implication.
+
+```{r librairies}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+```
+
+```{r tableau_annexeG}
+#| echo: false
+
+read.table("liste_publications.csv",
+           header = TRUE, sep = ";") %>% 
+  kable(col.names = 
+          c("Nbre par rg d'auteur",
+            "1er, 2e", "Avant-dernier, dernier", "Autre", "Total"))
+```

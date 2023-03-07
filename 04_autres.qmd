@@ -20,16 +20,12 @@
 
 ### Présentations en conférences et ateliers de recherche
 
--   *Octobre 2018* Groupe de recherche écologie statistique (Grenoble);
--   *Mai 2019* Assemblée générale du département INRA MIA (Jouy-en-Josas);
+2
 -   *Juin 2019* Journées de la statistique française (Nancy);
 -   *Mars 2022* Statistiques au sommet de Rochebrune (Megève);
 
 ### Présentations en séminaire de recherche
 
--   *Janvier 2019* Séminaire de l'Institut Henri Poincaré (Paris);
--   *Février 2019* Séminaire de statistiques d'Agroparistech (Paris);
--   *Juillet 2019* Séminaire à l'IRISA (Vannes);
 -   *Mai 2020* Séminaire de statistiques d'Agroparistech (Paris);\$
 -   *Juin 2021* Séminaire de statistiques de l'IMAG (Montpellier);
 -   *Octobre 2021* Séminaire d'ECOFOG (Kourou);

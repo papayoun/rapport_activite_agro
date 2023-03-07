@@ -4,158 +4,151 @@
 
 ### Services d'enseignement, réalisé pédagogique
 
-- Enseignant dans l'UFR de mathématiques du département MMIP;
-- Plus ou moins 192 heures par an réparties entre:
-    - Les 3 années du cursus ingénieur Agroparistech;
-    - Le Master Biologie, écologie et évolution de l'Université Paris-Saclay, cohabilité par Agroparistech;
-    - Le Master d'écologie Tropicale cohabilité Agroparistech et Université Antilles/Guyane
-- Ci dessous, le descriptif de mes principaux enseignements des 4 dernières années. Le décompte exact est fourni en annexe B. Les remplacements ponctuels ne sont pas recensés.
-    
-#### Interventions dans le cursus ingénieur 1A {-}
+-   Enseignant dans l'UFR de mathématiques du département MMIP;
+-   Plus ou moins 192 heures par an réparties entre:
+    -   Les 3 années du cursus ingénieur Agroparistech;
+    -   Le Master Biologie, écologie et évolution de l'Université Paris-Saclay, cohabilité par Agroparistech;
+    -   Le Master d'écologie Tropicale cohabilité Agroparistech et Université Antilles/Guyane
+-   Ci dessous, le descriptif de mes principaux enseignements des 4 dernières années. Le décompte exact est fourni en annexe B. Les remplacements ponctuels ne sont pas recensés.
 
-- **Modélisation mathématique et ses applications : statistiques**;
-    - Cursus: Tronc commun;
-    - Groupes de 30 étudiants;
-    - Chargé de TD;
-    - Outils de base de statistique inférentielle pour l'ingénieur;
-    - Évaluation en contrôle continu et examen final écrit;
-    - Collaborateurs: Responsable du cours et 5 autres chargés de TD;
+#### Interventions dans le cursus ingénieur 1A {.unnumbered}
 
-#### Interventions dans le cursus ingénieur 2A {-}
+-   **Modélisation mathématique et ses applications : statistiques**;
+    -   Cursus: Tronc commun;
+    -   Groupes de 30 étudiants;
+    -   Chargé de TD;
+    -   Outils de base de statistique inférentielle pour l'ingénieur;
+    -   Évaluation en contrôle continu et examen final écrit;
+    -   Collaborateurs: Responsable du cours et 5 autres chargés de TD;
 
-- **Sciences des données : apprentissage statistique**;
-    - Cursus: Tronc commun;
-    - Groupes de 30 étudiants;
-    - Chargé de cours (avant réforme du cours en 2020) et de TD;
-    - Modélisation et apprentissage statistique;
-    - Évaluation par projet et examen final;
-    - Collaborateurs: 3 Responsables du cours et 5 autres chargés de TD;
+#### Interventions dans le cursus ingénieur 2A {.unnumbered}
 
-- **Gestion et traitement des données environnementales**;
-    - Cursus: Socle commun de Domaine 3;
-    - 90 étudiants répartis en 4 groupes de TP;
-    - Responsable de cours et chargé de TD;
-    - Outils statistiques spécifiques pour les données environnementales (modèles pour les données de présence/absence, comptage et courbes);
-    - Évaluation par compte rendu de TP;
-    - Collaborateurs: 3 chargés de TD;
+-   **Sciences des données : apprentissage statistique**;
+    -   Cursus: Tronc commun;
+    -   Groupes de 30 étudiants;
+    -   Chargé de cours (avant réforme du cours en 2020) et de TD;
+    -   Modélisation et apprentissage statistique;
+    -   Évaluation par projet et examen final;
+    -   Collaborateurs: 3 Responsables du cours et 5 autres chargés de TD;
+-   **Gestion et traitement des données environnementales**;
+    -   Cursus: Socle commun de Domaine 3;
+    -   90 étudiants répartis en 4 groupes de TP;
+    -   Responsable de cours et chargé de TD;
+    -   Outils statistiques spécifiques pour les données environnementales (modèles pour les données de présence/absence, comptage et courbes);
+    -   Évaluation par compte rendu de TP;
+    -   Collaborateurs: 3 chargés de TD;
+-   **Outils Mathématiques et statistiques pour la santé**;
+    -   Cursus: Socle commun de Domaine 4;
+    -   96 étudiants répartis en 4 groupes de TP;
+    -   Responsable de cours et chargé de TD;
+    -   Outils statistiques spécifiques pour les données de santé (modèles pour les données de présence/absence, analyse de survie, modèles non linéaires, modèles SIR d'épidémiologie);
+    -   Évaluation par compte rendu de TP et examen écrit;
+    -   Collaborateurs: 3 chargés de TD;
+-   **Analyse statistique de données environnementales**;
+    -   Cursus: UC à choix (UC4);
+    -   Une dizaine d'étudiants;
+    -   Intervenant (cours et TP);
+    -   Modélisation hiérarchique bayésienne;
+    -   Évaluation par compte rendu de TP;
+    -   Collaborateurs: 3 autres intervenants;
+-   **Ingénierie par la simulation numérique**;
+    -   Cursus: UV projet à choix;
+    -   Une dizaine d'étudiants;
+    -   Intervenant (cours et TP);
+    -   Modèles d'équations différentielles stochastiques, simulation pour le calcul d'intégrales;
+    -   Évaluation par projet;
+    -   Collaborateurs: 5 autres intervenants;
 
-- **Outils Mathématiques et statistiques pour la santé**;
-    - Cursus: Socle commun de Domaine 4;
-    - 96 étudiants répartis en 4 groupes de TP;
-    - Responsable de cours et chargé de TD;
-    - Outils statistiques spécifiques pour les données de santé (modèles pour les données de présence/absence, analyse de survie, modèles non linéaires, modèles SIR d'épidémiologie);
-    - Évaluation par compte rendu de TP et examen écrit;
-    - Collaborateurs: 3 chargés de TD;
+#### Interventions dans le cursus ingénieur 3A {.unnumbered}
 
-- **Analyse statistique de données environnementales**;
-    - Cursus: UC à choix (UC4);
-    - Une dizaine d'étudiants;
-    - Intervenant (cours et TP);
-    - Modélisation hiérarchique bayésienne;
-    - Évaluation par compte rendu de TP;
-    - Collaborateurs: 3 autres intervenants;
-
-- **Ingénierie par la simulation numérique**;
-    - Cursus: UV projet à choix;
-    - Une dizaine d'étudiants;
-    - Intervenant (cours et TP);
-    - Modèles d'équations différentielles stochastiques, simulation pour le calcul d'intégrales;
-    - Évaluation par projet;
-    - Collaborateurs: 5 autres intervenants;
-
-#### Interventions dans le cursus ingénieur 3A {-}
-
-- **Analyse statistique de données**;
-    - Cursus: Dominante BIOTECH du cursus Agroparistech;
-    - Une dizaine d'étudiants;
-    - Responsable de cours et de TP;
-    - Analyse statistique *end to end* (du nettoyage de données à l'analyse);
-    - Évaluation par projet;
-    - Collaboratrices: 2 responsables, généticiennes;
+-   **Analyse statistique de données**;
+    -   Cursus: Dominante BIOTECH du cursus Agroparistech;
+    -   Une dizaine d'étudiants;
+    -   Responsable de cours et de TP;
+    -   Analyse statistique *end to end* (du nettoyage de données à l'analyse);
+    -   Évaluation par projet;
+    -   Collaboratrices: 2 responsables, généticiennes;
 
 #### Interventions dans le Master Biologie Ecologie Evolution
 
-- **Modèles aléatoires pour l'écologie et l'évolution**;
-    - Cursus: UC à choix du master BEE;
-    - Une dizaine d'étudiants;
-    - Responsable de cours et de TP;
-    - Modèles probabilistes Markoviens;
-    - Évaluation par rendus de TP;
-    - Collaborateurs: 2 intervenants;
-
-- **Modèles statistiques en écologie**;
-    - Cursus: UC à choix (mais fortement recommandée) du master BEE ;
-    - 60 étudiants répartis en 2 groupes de TP;
-    - Chargé TP;
-    - Modèles statistiques et techniques d'inférence en écologie;
-    - Évaluation par projet et examen écrit;
-    - Collaborateurs: 2 intervenants en cours et un autre chargé de TP;
-
-- **Introduction à la modélisation bayésienne en écologie**;
-    - Cursus: UC à choix du master BEE;
-    - 8 étudiants;
-    - Intervenant;
-    - Introduction à la modélisation bayésienne (modèles et inférence);
-    - Évaluation par compte rendu de TP;
-    - Collaborateurs: 2 intervenants;
+-   **Modèles aléatoires pour l'écologie et l'évolution**;
+    -   Cursus: UC à choix du master BEE;
+    -   Une dizaine d'étudiants;
+    -   Responsable de cours et de TP;
+    -   Modèles probabilistes Markoviens;
+    -   Évaluation par rendus de TP;
+    -   Collaborateurs: 2 intervenants;
+-   **Modèles statistiques en écologie**;
+    -   Cursus: UC à choix (mais fortement recommandée) du master BEE ;
+    -   60 étudiants répartis en 2 groupes de TP;
+    -   Chargé TP;
+    -   Modèles statistiques et techniques d'inférence en écologie;
+    -   Évaluation par projet et examen écrit;
+    -   Collaborateurs: 2 intervenants en cours et un autre chargé de TP;
+-   **Introduction à la modélisation bayésienne en écologie**;
+    -   Cursus: UC à choix du master BEE;
+    -   8 étudiants;
+    -   Intervenant;
+    -   Introduction à la modélisation bayésienne (modèles et inférence);
+    -   Évaluation par compte rendu de TP;
+    -   Collaborateurs: 2 intervenants;
 
 #### Interventions dans le Master d'Ecologie Tropicale de Kourou
 
-- **Outils Mathématiques pour l'analyse de données**;
-    - Cursus: UC obligatoire du master d'écologie Tropicale;
-    - 12 étudiants;
-    - Responsable de cours;
-    - Introduction aux statistiques opérationnelles en écologie;
-    - Évaluation par examen écrit;
+-   **Outils Mathématiques pour l'analyse de données**;
+    -   Cursus: UC obligatoire du master d'écologie Tropicale;
+    -   12 étudiants;
+    -   Responsable de cours;
+    -   Introduction aux statistiques opérationnelles en écologie;
+    -   Évaluation par examen écrit;
 
 ### Démarches pédagogiques, responsabilités assumées
 
 #### Responsabilités
 
-- Responsable des statistiques pour:
-    - Socle commun de domaine 3 des 2A Agroparistech (à peu près 90 étudiants);
-    - Socle commun de domaine 4 des 2A Agroparistech (96 étudiants);
-    - Dominante Biotech 3A Agroparistech (10 étudiants);
+-   Responsable des statistiques pour:
+    -   Socle commun de domaine 3 des 2A Agroparistech (à peu près 90 étudiants);
+    -   Socle commun de domaine 4 des 2A Agroparistech (96 étudiants);
+    -   Dominante Biotech 3A Agroparistech (10 étudiants);
 
 #### Démarches pédagogiques
 
-- Suivi de la formation à la pédagogie d'Agroparistech en 2020-2021 (120 heures de formation);
+-   Suivi de la formation à la pédagogie d'Agroparistech en 2020-2021 (120 heures de formation);
 
 ### Création - Innovation - Evolution - Actualisation -- Prospective
 
+Voir section "Création de document pédagogiques"
 
 ### Encadrement d'étudiants pour l'enseignement (hors activités de recherche)
 
-- Encadrement en 2021-2022 et 2022-2023 de deux étudiants du Master MathSV en projet annuel;
-- Suivi de CEI de divers étudiants Agroparistech:
-    - Mathilde Vuillemin;
-    - Jérémie Sénut;
-    - Hélène Philippe;
-- Suivi de stage pour divers stages d'étudiants Agroparistech de 2A.
-
+-   Encadrement en 2021-2022 et 2022-2023 de deux étudiants du Master MathSV en projet annuel;
+-   Suivi de CEI de divers étudiants Agroparistech:
+    -   Mathilde Vuillemin;
+    -   Jérémie Sénut;
+    -   Hélène Philippe;
+-   Suivi de stage pour divers stages d'étudiants Agroparistech de 2A.
 
 ## Participation à l'enseignement en France hors de l'établissement
 
-- **R avancé pour la data-science**;
-    - 18h entre 2019 et 2020;
-    - Cursus: Formation continue en Data Science (Paris Sciences et lettres);
-    - 12 étudiants;
-    - Responsable;
-    - Cours de R avancé pour la manipulation de données et la visualisation;
-
-- **Introduction aux méthodes de Monte Carlo**;
-    - 24h en 2020;
-    - Cursus ingénieur de l'ENSTA (2ème année);
-    - 30 étudiants;
-    - Responsable;
-    - Introduction aux méthodes de Monte Carlo et à l'inférence bayésienne;
+-   **R avancé pour la data-science**;
+    -   18h entre 2019 et 2020;
+    -   Cursus: Formation continue en Data Science (Paris Sciences et lettres);
+    -   12 étudiants;
+    -   Responsable;
+    -   Cours de R avancé pour la manipulation de données et la visualisation;
+-   **Introduction aux méthodes de Monte Carlo**;
+    -   24h en 2020;
+    -   Cursus ingénieur de l'ENSTA (2ème année);
+    -   30 étudiants;
+    -   Responsable;
+    -   Introduction aux méthodes de Monte Carlo et à l'inférence bayésienne;
 
 ## Missions d'enseignement à l'étranger
 
 ## Création de documents pédagogiques et publications d'enseignement
 
-- Vidéos de supports pour les cours de socle commun de D3 et D4 (mise sur ecampus);
-- Création d'une autoformation `R` à destination des étudiants du tronc commun de 2A:
-    - Supports `.html` 
-    - Quiz d'autoformation en ligne sur ecampus.
-- Mise à disposition des supports de cours (slides, polycopiés, examens corrigés) pour tous mes cours;
+-   Vidéos de supports pour les cours de socle commun de D3 et D4 (mise sur ecampus);
+-   Création d'une autoformation `R` à destination des étudiants du tronc commun de 2A:
+    -   Supports `.html`
+    -   Quiz d'autoformation en ligne sur ecampus.
+-   Mise à disposition des supports de cours (slides, polycopiés, examens corrigés) pour tous mes cours;
